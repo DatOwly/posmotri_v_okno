@@ -1,0 +1,1 @@
+git@github.com:DatOwly/posmotri_v_okno.git
