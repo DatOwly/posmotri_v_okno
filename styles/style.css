@@ -73,6 +73,8 @@ ol {
 
 .result__video {
   width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .search-form {
@@ -94,12 +96,12 @@ ol {
   font-size: 18px;
 }
 
-.search-form__label {
+.search-form__label{
+  position: relative;
   display: inline-flex;
-  align-items: flex-start;
-  gap: 5px;
+  align-items: center;
+  column-gap: 5px;
   cursor: pointer;
-  inline-size: fit-content;
 }
 
 .search-form__label:hover .search-form__label-text {
@@ -221,7 +223,7 @@ ol {
   overflow: auto;
   inline-size: 398px;
   block-size: 298px;
-  scrollbar-width: none
+  scrollbar-width: none;
 }
 
 .content__list-item:not(:last-child) {
@@ -277,10 +279,14 @@ ol {
   font-size: 30px;
   line-height: 100%;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 206px; 
 }
 
 .content__video-card-description {
-  line-height: 0.9;
+  line-height: 16.2px;
 }
 
 .content__video-card-thumbnail {
